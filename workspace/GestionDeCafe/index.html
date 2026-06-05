@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+    <html lang="es">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gestión de Café</title>
+        <link rel="stylesheet" href="styles.css">
+      </head>
+      <body>
+        <header class="cabecera">
+          <h1>Gerenciador del Cafe</h1>
+        </header>
+        <main>
+          <section id="menu">
+            <h2>MENU</h2>
+            <ul>
+              <li><a href="#cafe">Café</a></li>
+              <li><a href="#ingredios">Ingredientes</a></li>
+              <li><a href="#operaciones">Operaciones</a></li>
+            </ul>
+          </section>
+          <section id="cafe">
+            <h2>Café</h2>
+            <form id="agregar-cafe">
+              <label for="nombreCafe">Nombre:</label>
+              <input type="text" id="nombreCafe" name="nombreCafe"><br><br>
+              <label for="precio">Precio:</label>
+              <input type="number" id="precio" name="precio"><br><br>
+              <button type="submit">Agregar</button>
+            </form>
+            <table id="cafe-table">
+              <thead>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Precio</th>
+                  <th>Acciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Filas se llenarán dinámicamente -->
+              </tbody>
+            </table>
+          </section>
+          <section id="ingredios">
+            <h2>Ingredientes</h2>
+            <form id="agregar-ingrediente">
+              <label for="nombreIngrediente">Nombre:</label>
+              <input type="text" id="nombreIngrediente" name="nombreIngrediente"><br><br>
+              <label for="stock">Stock:</label>
+              <input type="number" id="stock" name="stock"><br><br>
+              <button type="submit">Agregar</button>
+            </form>
+            <table id="ingrediente-table">
+              <thead>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Stock</th>
+                  <th>Acciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Filas se llenarán dinámicamente -->
+              </tbody>
+            </table>
+          </section>
+          <section id="operaciones">
+            <h2>Operaciones</h2>
+            <form id="realizar-venta">
+              <label for="cafeId">Café:</label>
+              <select id="cafeId"></select><br><br>
+              <label for="cantidadVendida">Cantidad vendida:</label>
+              <input type="number" id="cantidadVendida" name="cantidadVendida"><br><br>
+              <button type="submit">Realizar Venta</button>
+            </form>
+          </section>
+        </main>
+      </body>
+    </html>
